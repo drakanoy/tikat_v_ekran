@@ -1,2 +1,2 @@
 import pygame
-print('нфша игра')
+print('нaша игра')
