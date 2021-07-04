@@ -1,1 +1,1 @@
-print('hello')
+print('genshin impact is best')
