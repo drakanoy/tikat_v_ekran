@@ -14,4 +14,5 @@ if __name__ == '__main__':
                 running = False
         screen.fill((212, 26, 67))
         pygame.display.flip()
+        clock.tick(60)
     pygame.quit()
