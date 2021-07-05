@@ -4,6 +4,8 @@ import pygame
 if __name__ == '__main__':
     pygame.init()
     pygame.display.set_caption('клетчатое поле')
+    icon = pygame.image.load("iconka.png")
+    pygame.display.set_icon(icon)
     size = width, height = 700, 700
     screen = pygame.display.set_mode(size)
     clock = pygame.time.Clock()
