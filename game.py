@@ -3,7 +3,7 @@ import pygame
 
 if __name__ == '__main__':
     pygame.init()
-    pygame.display.set_caption('клетчатое поле')
+    pygame.display.set_caption('Ritbc')
     icon = pygame.image.load("iconka.png")
     pygame.display.set_icon(icon)
     size = width, height = 700, 700
