@@ -1,3 +1,17 @@
-print('genshin impact is best')
-pygame.draw.rect(screen, (randint(0,255), randint(0,255),randint(0,255)), (usr_x, usr_y, usr_width, usr_height))
-212, 26, 67
+from random import randint
+
+
+def color():
+    red = randint(0, 255)
+    green = randint(0, 255)
+    blue = randint(100, 255)
+    return (red, green, blue)
+
+
+l1 = int()
+
+
+
+class Privret:
+    def __init__(self, colvo):
+        self.colvo = colvo
