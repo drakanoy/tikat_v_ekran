@@ -1,6 +1,9 @@
 import pygame
 from random import randint
 from черновик import color
+import time
+from threading import *
+from time import time ,sleep
 
 
 class Cletka:
@@ -24,7 +27,13 @@ if __name__ == '__main__':
     usr_width = 45
     usr_height = 45
     kvadrat = Cletka(color())
-    while running:
+    p1= Thread(target=potokosnova)
+    p2= Thread(target=vremya)
+    def vremya():
+        while kvadrat = True:
+        sleep(3)
+    def potokosnova():
+        while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
