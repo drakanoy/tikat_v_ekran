@@ -34,6 +34,8 @@ if __name__ == '__main__':
                     usr_x = randint(45, 655)
                     usr_y = randint(45, 655)
                     kvadrat = Cletka(color())
+                else:
+                    print("Попытайся снова") 
         screen.fill((212, 26, 67))
         pygame.draw.rect(screen, kvadrat.color, (usr_x, usr_y, kvadrat.wight, kvadrat.height))
         pygame.display.update()
