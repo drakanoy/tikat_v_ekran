@@ -20,7 +20,7 @@ if __name__ == '__main__':
             if event.type == pygame.QUIT:
                 running = False
         screen.fill((212, 26, 67))
-        pygame.draw.rect(screen, (247, 240, 22), (usr_x, usr_y, usr_width, usr_height))
+        pygame.draw.rect(screen, (randint(0,255), randint(0,255),randint(0,255)), (usr_x, usr_y, usr_width, usr_height))
         pygame.display.update()
         pygame.display.flip()
         clock.tick(60)
