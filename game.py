@@ -30,7 +30,7 @@ if __name__ == '__main__':
                 running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 x, y = event.pos[0], event.pos[1]
-                if usr_x < x < usr_x + 45 and usr_y < y < usr_y + 45:
+                if usr_x <= x <= usr_x + 45 and usr_y <= y <= usr_y + 45:
                     usr_x = randint(45, 655)
                     usr_y = randint(45, 655)
                     kvadrat = Cletka(color())
