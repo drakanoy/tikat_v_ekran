@@ -3,7 +3,7 @@ from random import randint
 from черновик import color
 import time
 from threading import *
-from time import time ,sleep
+from time import time, sleep
 
 
 class Cletka:
@@ -13,6 +13,13 @@ class Cletka:
         self.wight = 45
 
 
+#    p1= Thread(target=potokosnova)
+#    p2= Thread(target=vremya)
+#    def vremya():
+#        while kvadrat = True:
+#       sleep(3)
+#    def potokosnova():
+#       pass
 if __name__ == '__main__':
     pygame.init()
     pygame.display.set_caption('Ritbc')
@@ -27,13 +34,7 @@ if __name__ == '__main__':
     usr_width = 45
     usr_height = 45
     kvadrat = Cletka(color())
-    p1= Thread(target=potokosnova)
-    p2= Thread(target=vremya)
-    def vremya():
-        while kvadrat = True:
-        sleep(3)
-    def potokosnova():
-        while running:
+    while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
@@ -44,7 +45,7 @@ if __name__ == '__main__':
                     usr_y = randint(45, 655)
                     kvadrat = Cletka(color())
                 else:
-                    print("Попытайся снова") 
+                    print("Попытайся снова")
         screen.fill((212, 26, 67))
         pygame.draw.rect(screen, kvadrat.color, (usr_x, usr_y, kvadrat.wight, kvadrat.height))
         pygame.display.update()
